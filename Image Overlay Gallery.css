@@ -1,0 +1,46 @@
+.places{
+	position: relative;
+}
+.contain{
+	display:flex;
+	flex-wrap:wrap;
+	//border:2px solid orange;
+	justify-content:space-between;
+}
+.overlay {
+  position: absolute; 
+  //bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top:-200px;
+  height:70px;
+}
+.overlay2 {
+  position: absolute; 
+  //bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top:-200px;
+}
+.places:hover .overlay2 {
+  opacity: 1;
+}
+.places:hover .overlay {
+  opacity: 1;
+}

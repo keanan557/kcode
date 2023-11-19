@@ -1,0 +1,35 @@
+.container{
+	display:flex;
+	width:990px;
+	height:auto;
+	//border:2px solid blue;
+	margin:auto;
+	flex-wrap:wrap;
+	gap:30px;
+}
+.header{
+	display:flex;
+	width:990px;
+	height:100px;
+	background-color:#00a651;
+	justify-content:space-between;
+}
+.logo{
+	width:330px;
+	height:60px;
+}
+.logo:hover{
+	border:2px solid white;
+}
+
+.places{
+	display:flex;
+	flex-wrap:wrap;
+	//border:2px solid orange;
+	justify-content:space-between;
+}
+.box{
+	width:250px;
+	height:340px;
+	//border:2px solid red;
+}
