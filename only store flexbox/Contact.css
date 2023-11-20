@@ -1,0 +1,30 @@
+.flex-container{
+	display:flex;
+	flex-wrap:wrap;
+	width:990px;
+	//border:2px solid red;
+	margin:auto;
+	gap:1rem;
+}
+.Call{
+	margin-left:auto;
+	font-size:33px;
+	font-family:Arial;
+}
+hr{
+	width:990px;
+	margin-top:20px;
+}
+.email{
+	//border:2px solid red;
+	margin:auto;
+	gap:1rem;
+}
+.btn{
+	color:black;
+	background-color:red;
+	
+}
+p{
+	color:black;
+}

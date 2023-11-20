@@ -1,0 +1,76 @@
+.flex-container{
+	display:flex;
+	flex-wrap:wrap;
+	width:990px;
+	//border:2px solid red;
+	margin:auto;
+	gap:1rem;
+}
+.Call{
+	margin-left:auto;
+	font-size:33px;
+	font-family:Arial;
+}
+hr{
+	width:990px;
+	margin-top:20px;
+}
+.shirts a{
+	margin-left:20px;
+}
+.ship{
+	width:350px;
+	//border:2px solid red;
+	font-size:16px;
+	font-family:Arial;
+	//margin-left:auto;
+	margin-left:395px;
+	margin-top:-195px;
+}
+.h3{
+	font-size:22px;
+	font-family:Arial;
+	margin-top:-200px;
+	margin-left:390px;
+}
+.main{
+	width:990px;
+	//border:2px solid red;
+	margin:auto;
+	height:1015px;
+	display:flex;
+	margin-top:20px;
+	gap:30px;
+	//justify-content:space-evenly;
+	//flex-direction:column;
+}
+.cat{
+	width:175px;
+	height:308px;
+	border:2px solid gray;
+	padding-left:40px;
+}
+.right{
+		width:780px;
+	height:940px;
+	//border:2px solid purple;
+}
+.shirts{
+	width:780px;
+	height:650px;
+	//border:2px solid blue;
+	//margin-left:auto;
+}
+.shipping{
+	width:780px;
+	height:250px;
+	//border:2px solid pink;
+	margin-top:40px;
+	display:flex;
+	flex-direction:column;
+	//justify-content:space-between;
+}
+p{
+	font-size:22px;
+	font-family:Arial;
+}

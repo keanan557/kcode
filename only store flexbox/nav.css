@@ -1,0 +1,33 @@
+ul{
+	margin:0;
+	padding:0;
+	background-color:black;
+	width:990px;
+	height:57px;
+	overflow:hidden;
+	list-style-type:none;
+	margin-top:20px;
+}
+li{
+	float:left;
+	
+}
+hr{
+	width:990px;
+}
+li a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	padding:14px 57.2px;
+	font-size:28px;
+	transition: 0.5s ease-in-out all;
+
+}
+li a:hover{
+	background-color:red;
+	
+}
+.active{
+background-color:red;
+}	

@@ -1,0 +1,50 @@
+.container{
+	display:flex;
+	width:990px;
+	//border:2px solid blue;
+	margin:auto;
+	flex-wrap:wrap;
+	gap:1em;
+}
+.call{
+	margin-left:auto;
+	font-size:33px;
+	font-family:Arial;
+}
+hr{
+	width:990px;
+}
+.small{
+	font-size:18px;
+	margin-top:-4px;
+	
+}
+.pics{
+	width:990px;
+	height:450px;
+	//border:2px solid green;
+	margin:auto;display:flex;
+	justify-content:space-between;
+	gap:20px;
+}
+.small1{
+	//border:2px solid green;
+	
+}
+.small_2{
+	
+}
+.photos{
+    display:flex;
+    margin:auto;
+	gap:30px;
+}
+p{
+	width:300px;
+	margin:auto;
+}
+.headings{
+	display:flex;
+	gap:30px;
+	margin:auto;
+}
