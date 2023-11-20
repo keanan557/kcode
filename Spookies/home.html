@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="slideshow.css"
+</head>
+<body>
+<div class="container">
+
+<div class="top">
+
+<img class="logo" src="images/logo.jpg">
+
+<div class="contact">
+<h1>Contact Us - 021 535 2088</h1>
+<input class="search" type="text">
+<button  class="button">search</button>
+
+</div>
+
+</div>
+
+<ul>
+<li><a href="home.html ">HOME</a></li>
+<li><a href="AboutUs.html">ABOUT US</a></li>
+<li><a href="Products.html">OUR PRODUCTS</a></li>
+<li><a href="gallery.html ">GALLERY</a></li>
+<li><a href=" contact.html">CONTACT US</a></li>
+</ul>
+
+<div class="banner">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="s1" src="images/banner.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="s1" src="images/about_banner.jpg" style="width:100%;height:232px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="s1" src="images/banner2.jpg" style="width:100%;height:232px;">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+<img src="images/pic1.jpg">
+<img src="images/pic2.jpg">
+
+<div class=" footer">
+<ul class="un">
+<li><a  class="der" href="home.html ">HOME</a></li>
+<li><a class="der" href="About.html ">ABOUT US</a></li>
+<li><a class="der" href=" ">OUR PRODUCTS</a></li>
+<li><a class="der" href=" ">GALLERY</a></li>
+<li><a  class="der"href=" ">CONTACT US</a></li>
+</ul>
+</div>
+
+
+</div>
+</body>
+</html>

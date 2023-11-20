@@ -1,0 +1,52 @@
+.container{
+	width:990px;
+	margin:auto;
+	//border:2px solid blue;
+	max-width:100%;
+	
+}
+.top{
+	display:flex;
+	justify-content:space-between;
+	width:990px;
+	height:150px;
+	background-color:#ffc207;
+	
+}
+.logo{
+	//border:2px solid blue;
+	width:30%;
+}
+.contact{
+	//border:2px solid blue;
+	color:white;
+}
+
+.search{
+	margin-top:30px;
+}
+.button{
+	margin-top:30px;
+	color:white;
+	background-color:red;
+}
+
+.footer{
+	display:flex;
+	width:990px;
+	height:107px;
+	background-color:white;
+	color:#ee2e23;
+	font-size:16px;
+	float:left;
+}.game{
+  transition: transform 3s;
+
+ 
+}
+
+.game:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}

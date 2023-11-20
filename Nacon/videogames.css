@@ -1,0 +1,45 @@
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	//border:5px solid orange ;
+	width:990px;
+	margin:auto;
+	
+}
+.nacon{
+	width:301px;
+}
+.top{
+	background-color:black;
+	width:990px;
+	height:26px;
+	
+}
+.logo{
+	margin-left:auto;
+	width:219px;
+	height:50px;width:150px;
+}
+.head{
+	display:flex;
+	background-color:#09142f ;
+	width:990px;
+	height:50px;	
+}
+
+.game{
+  transition: transform 3s;
+
+ 
+}
+
+.game:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+.footer{
+	width:990px;
+	height:150px;
+	background-color:#01050f;
+}

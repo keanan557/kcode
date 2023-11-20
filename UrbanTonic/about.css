@@ -1,0 +1,57 @@
+.container{
+	display:flex;
+	width:990px;
+	margin:auto;
+	//border: 2px solid blue;
+	flex-wrap:wrap;
+	gap:10px;
+	max-width:100%;
+}
+.call{
+	margin-left:auto;
+	font-size:33px;
+	font-family:Arial;
+	color:grey;
+	margin-top:15px;
+}
+.logo{
+	width:28%;
+}
+ul{	
+    display:flex;
+	list-style-type:none;
+    margin:0;
+    padding:0;	
+    overflow:hidden;
+	background-color:#000000;
+	
+	width:990px;
+	height:57px;
+	font-family:arial;
+	font-size:28px;
+}
+li{
+	display:flex;
+	
+}
+li a{
+	display:block;
+	color:white;
+	padding: 14px 69px;
+	text-decoration:none;
+	text-align:center;  
+	transition:all ease 0.5s;
+}
+li a:hover:not(.active){
+    background-color:#f54a1c;
+}
+.active{
+	background-color:#f54a1c;
+}
+hr{
+	width:990px;
+}
+.footer{
+	margin-left:15px;
+	color:grey;
+}
