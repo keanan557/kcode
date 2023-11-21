@@ -1,0 +1,54 @@
+
+/*skills-progress-bar css*/
+
+.skill-heading {
+	font-size: 2.5rem;
+	color: #0ef;
+	margin-bottom: 40px;
+}
+
+
+
+.skills-container {
+	height:750px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #1f242d;
+}
+
+.skills-container .skills-progress-bar{
+	margin-bottom: 25px;
+	
+	
+}
+.skills-container .skills-progress-bar h4{
+	margin: 0 0 15px 15px;
+	letter-spacing: .5px;
+}
+.skills-container .skills-progress-bar .skills-bar{
+	position: relative;
+	width: 500px;
+	height: 30px;
+	background: #1f242d;
+	box-shadow: 3px 4px 5px 0px rgba(204 185 185/ .75);
+	border-radius: 30px;
+}
+.skills-container .skills-progress-bar .skills-bar span{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	color: white;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.7;
+	text-align: center;
+	border-radius: 30px;
+	background: #0ef;
+	transition: width .5s linear;
+}
