@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+
+html {
+	scrolling: smooth;
+	gap: 1rem;
+}
+
+body {
+	max-width: 100%;
+}
+
+/*about*/
+.about-heading {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #023e8a;
+}
+
+.about-text {
+	text-align: center;
+}
+
+.name {
+	color: #023e8a;
+}
+/*nav*/
+.navbar .container-fluid{
+	background: #023e8a;
+}
+
+.navbar-nav {
+	margin-left: 750px;
+	gap: 30px;
+}
+
+
+/*banner*/
+.chat {
+	border: 2px solid red;
+	background: #023e8a;
+	color: #fff;
+	width: 300px;
+	height: 70px;
+	position: absolute;
+	margin-top: -120px;
+	margin-left: 1000px;
+	font-size: 40px;
+}
+
+
+/*services*/
+.services {
+	background:  #023e8a;
+	color: #fff;
+}
+
+.services-heading {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 32px;
+	margin-top: 30px;
+}
+
+.services-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	//border: 2px solid red;
+	
+}
+
+.icons {
+   width: 128px;
+   height: 128px;
+  // border: 2px solid red;
+   fill: #fff;
+}
+
+.item-heading {
+	margin-bottom: 30px;
+}
+
+/*contact*/
+.contact-heading{
+	font-size: 32px;
+	margin-top: 30px;
+}
+
+.contact {
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-icons {
+	width: 32px;
+	height: 32px;
+}
+
+/*responsive bootstrap breakpoints*/
+@media (max-width: 1000px) {
+	/*banner*/
+.chat {
+	border: 2px solid red;
+	background: #023e8a;
+	color: #fff;
+}
+.navbar-nav {
+	margin-left: 10px;
+	gap: 1px;
+	
+}
+	.banner {
+	height: 300px;
+}
+
+	.services {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.services-container {
+	display: flex;
+	width:128px;
+	flex-direction: column;
+   }
+   
+   /*contact*/
+	.contact {
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	}
+}
