@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: myFont;
+}
+
+@font-face{
+	font-family: myFont;
+	src:url(font/pixel.ttf);
+}
+
+body {
+	background-image: url('images/background.gif');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	overflow: hidden;
+}
+
+h1{
+	font-family: myFont;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 48px;
+	color: teal;
+}
+
+.navbar ul{
+	list-style-type: none;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: teal;
+	font-size: 40px;
+}
+
+.navbar{
+	display:flex;
+	gap: 10px;
+}
+
+#popup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.75);
+	display: none;
+}
+
+#popup .popup-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 10px 40px;
+	background: rgba(0,0,0,0.0);
+	color: teal;
+}
+
+#popup a.close-popup {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	font-size: 40px;
+	font-weight: 600;
+	text-decoration:none;
+}
+
+#popup:target {
+	display: block;
+}
+
+#popup2{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.75);
+	display: none;
+}
+
+#popup2 .popup-content2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	padding: 10px 40px;
+	background: rgba(0,0,0,0.0);
+	color: teal;
+	height: 700px;
+	margin-top: 10px;
+	//border: 2px solid red;
+	
+}
+
+#popup2 a.close-popup2 {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-size: 40px;
+	font-weight: 600;
+	text-decoration:none;
+}
+
+#popup2:target {
+	display: block;
+}
+
+
+
+svg{
+	width: 80px;
+	height:80px;
+	border-radius: 50%;
+}
+
+.socials{
+	margin-right: 30px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.Portfolio-content{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 390px;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-top: 40px;
+	//border: 2px solid red;
+}
+
+.row img{
+	height: 150px;
+	width: 170px;
+	border-radius: 28px;
+}
+
