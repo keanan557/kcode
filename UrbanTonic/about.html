@@ -1,32 +1,81 @@
 <!doctype html>
 <html>
-<head>
-<link rel="stylesheet" href="about.css">
-</head>
-<body>
-<div class="container">
-<img class="logo" src="images/logo.jpg">
-<div class="call">Call us on:<br>021 713 4456</div>
-<hr>
-<div  class="nav">
-<ul>
-<li><a href="home.html">Home</a></li>
-<li><a  class="active" href="about.html">About Us </a></li>
-<li><a href="">Eventing</a></li>
-<li><a href="">Contact Us</a></li>
-</ul>
-</div>
-<img src="images/about_banner.jpg">
-<div class="footer">
-<h1>About us<h1>
-<h3>its Simple,our events work</h3>
-<p>We're the muscle behind the memories...After 15years in the game,nothing escapes us.We're in the business of making our clints relax.Five
-8 tonne trucks packed to the max is another day at the office for urbantonic.And no job is too small.We're here to meet your every need and make you look good.<br>
-<br>From weddings and birthday celebrations to big scale corporate launches and private dinners;no matter what type of function you are looking on time,every time.<br><br>
-urbantonic invites you to the world of eventing simplified...where everything works.We can do it all.Or we can fulfill selective aspects of your needs.This is our passion,so allow us to show you what we do best!
-</p>
-</div>
-<hr>
-</div>
+	<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="about.css">
+	</head>
+	<body>
+		<div class="container">
+			
+			<!--header-->
+		<div class="header">
+			<img src="images/logo.jpg">
+			
+			<div>
+				<p class="call-text">Call us on:</p>
+				<p class="call-number">021 713 4456</p>
+			</div>
+		</div>
+		<hr>
+		<!--nav-->
+		<div class="topnav" id="myTopnav">
+		  <a href="home.html" >Home</a>
+		  <a href="about.html"   class="active" >About Us</a>
+		  <a href="#contact">Eventing</a>
+		  <a href="#about">Contact Us</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+			</svg>
+		  </a>
+		</div>
+		
+			<!--banner-->
+			<img class="banner" src="images/about_banner.jpg">
+			
+			<!--footer-->
+			<div class="footer">
+				<h1>About us<h1>
+				<h3>its Simple,our events work</h3>
+				<p>We're the muscle behind the
+				memories...After 15years in the
+				game,nothing escapes us.We're in
+				the business of making our clints
+				relax.Five
+				8 tonne trucks packed to the max 
+				is another day at the office for
+				urbantonic.And no job is too small
+				.We're here to meet your every need
+				and make you look good.<br>
+				<br>From weddings and birthday
+				celebrations to big scale corporate
+				launches and private dinners;no
+				matter what type of function you
+				are looking on time,every time.<br>
+				<br>
+				urbantonic invites you to the world
+				of eventing simplified...where
+				everything works.We can do it all
+				.Or we can fulfill selective
+				aspects of your needs.This is
+				our passion,so allow us to show
+				you what we do best!
+				</p>
+			</div>
+			<hr>
+		</div>
+		
+		<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
 </body>
 </html>
