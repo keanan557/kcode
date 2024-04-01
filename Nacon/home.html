@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nacon</title>
+    <title>nacon</title>
     <link rel="stylesheet" href="home.css">
   </head>
   <body>
@@ -34,6 +34,7 @@
 			<source src="video/PWR_Lachlan_desk_6.mp4">
 		</video>
 		
+		<!--games-->
 		<div class="games">
 			<h2>Games</h2>
 			<div class="games-container">
@@ -42,14 +43,60 @@
 				<img src="img/robocop_landscape.jpg">
 			</div>
 		</div>
+		
+		<!--slider-->
+		<div class="slider-wrapper">
+			<h2>Accessories</h2>
+			<svg id="prev-slide" class="slide-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+			  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+			</svg>
+		
+			<div class="image-list">
+				<img class="image-item" src="img/ICONS_R5P.png">
+				<img class="image-item" src="img/ICONS_RIG800pro_1.png">
+				<img class="image-item" src="img/ICONS_Mobile.png">
+				<img class="image-item" src="img/ezgif.com-webp-to-png-converter.png">
+				<img class="image-item" src="img/ICONS_Equipements_1.png">
+				<img class="image-item" src="img/ICONS_Fauteuils_1.png">
+				<img class="image-item" src="img/ICONS_Audio_1.png">
+			</div>
+			
+			<svg id="next-slide" class="slide-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+			  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+			</svg>
+			
+			<div class="slider-scrollbar">
+				<div class="scrollbar-track">
+					<div class="scrollbar-thumb"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script>
+	//responsive nav script
 	const toggleButton = document.getElementsByClassName('toggle-button')[0]
 	const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 	
 	toggleButton.addEventListener('click', () => {
 		navbarLinks.classList.toggle('active')
 	})
+	
+	//image slider code
+	const initSlider = () => {
+	const imageList = document.querySelector(".slider-wrapper .image-list")
+		const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button")
+		
+		//slides images according to the slide button clicks
+		slideButtons.forEach(button => {
+			button.addEventListener("click", ()=>{
+				const direction = button.id === "prev-slide" ? -1 : 1
+				const scrollAmount = imageList.clientWidth * direction
+				imageList.scrollBy({left: scrollAmount, behavior: 'smooth'})
+			})
+		})
+	}
+	
+	window.addEventListener("load", initSlider)
 	</script>
   </body>
 </html>
