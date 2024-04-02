@@ -22,6 +22,8 @@ body {
 .brand-title{
 	font-size: 1.5rem;
 	margin:.5rem;
+	text-decoration: none;
+	color: #fff;
 }
 
 .navbar-links ul {
@@ -79,12 +81,32 @@ video{
 	font-size: 50px;
 }
 
+.games a{
+	text-decoration: none;
+	color: #000;
+}
+
+.games a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+
 .games-container {
 	display: flex;
 	gap: 50px;
 	justify-content: center;
 	//border: 1px solid red;
 	
+}
+
+.games-container h4{
+	font-size: 22px;
+	font-family: arial;
+}
+
+.games-container p{
+	font-size: 26px;
+	font-weight: bold;
 }
 
 .games-container img{
@@ -110,8 +132,6 @@ video{
 	text-align: center;
 	font-size: 40px;
 }
-
-
 
 .slider-wrapper .image-list .image-item{
 	max-width: 250px;
@@ -202,6 +222,11 @@ section{
 .icons svg{
 	width: 30px;
 	height: 30px;
+}
+
+.icons svg:hover{
+	color: #fff;
+	transform: translateY(-5px);
 }
 
 /*responsive */
