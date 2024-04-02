@@ -22,9 +22,17 @@ body {
 .brand-title{
 	font-size: 1.5rem;
 	margin:.5rem;
-	text-decoration: none;
+	
 	color: #fff;
+	
 }
+
+ a{
+	list-style: none;
+	text-decoration: none;
+}
+
+
 
 .navbar-links ul {
 	margin: 0;

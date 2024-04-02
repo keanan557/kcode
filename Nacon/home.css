@@ -26,6 +26,11 @@ body {
 	color: #fff;
 }
 
+ a{
+	list-style: none;
+	text-decoration: none;
+}
+
 .navbar-links ul {
 	margin: 0;
 	padding: 0;
