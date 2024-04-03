@@ -24,10 +24,18 @@
 
 .places{
 	display:flex;
+	max-width: 990px;
 	flex-wrap:wrap;
-	//border:2px solid orange;
-	justify-content:space-between;
+	border:2px solid blue;
+	justify-content: center;
+	padding: 40px;
 }
+
+.places .cont1 img{
+	max-width: 300px ;
+	border:2px solid orange;
+}
+
 .box{
 	width:250px;
 	height:340px;

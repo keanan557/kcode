@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
   <title>Home</title>
@@ -11,23 +12,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
-
-
 <body>
-<div class="container">
 
-<!--header & Logo-->
-<div class="header">
-<a href="home.html">
-<img class="logo" src="Images/logo.jpg"></a>
-<!--navigation bar-->
-<div class="topnav">
-  <a class="active" href="home.html">Home</a>
-  <a href="Pricing.html">Pricing</a>
-  <a href="ContactUs.html">About Us</a>
-  <a href="Gallery.html">Gallery</a>
-  <a href="ContactUs.html">Contact Us</a>
-</div>
+<!--nav-->
+		<nav class="navbar">
+			<a href="home.html">
+			<div class="brand-title">
+			<img class="logo" src="Images/logo.jpg"></a></div></a>
+			<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="AboutUs.html">AboutUs</a></li>
+					<li><a href="Pricing.html">Pricing</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="ContactUs.html.html">ContactUs</a></li>
+				</ul>
+			</div>
+		</nav>
 <!--Slideshow banner-->
 </div>
 <div class="banner">
@@ -66,42 +71,10 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+</div>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-</script>
-
-  </div>
 <!--destinations-->
-   <h1>Most Popular Destinations</h1>
+   <h1 class="mp">Most Popular Destinations</h1>
 
  <div class="dest">
 
@@ -176,17 +149,48 @@ function showSlides(n) {
 					<a href="#"><i class="fab fa-linkedin-in"></i>  </a>
 				 </div>				 
 			 </div>
-		 
-		 
 		 </div>
-	 
 	 </div>
-  
   </footer>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 
-
-</div>
-</div>
+	//responsive nav script
+	const toggleButton = document.getElementsByClassName('toggle-button')[0]
+	const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+	
+	toggleButton.addEventListener('click', () => {
+		navbarLinks.classList.toggle('active')
+	})
+</script>
 </body>
 </html>

@@ -12,6 +12,7 @@
   display:flex;
   position:relative;
   top:-108px;
+  max-width: 300px;
 }
 /*overlay images*/
 .cont1{
