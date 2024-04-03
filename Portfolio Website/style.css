@@ -27,6 +27,7 @@ h1{
 	color: teal;
 }
 
+/*navigation */
 .navbar ul{
 	list-style-type: none;
 }
@@ -42,6 +43,7 @@ h1{
 	gap: 10px;
 }
 
+/*popups*/
 #popup{
 	position: fixed;
 	top: 0px;
@@ -88,18 +90,31 @@ h1{
 }
 
 #popup2 .popup-content2{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 500px;
-	padding: 10px 40px;
+	
 	background: rgba(0,0,0,0.0);
 	color: teal;
-	height: 700px;
-	margin-top: 10px;
 	//border: 2px solid red;
-	
+	margin-top: 50px;
+	max-width: 100%;
+}
+
+.Portfolio-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	//border: 2px solid red;
+	max-width: 100%;
+}
+
+
+.row img{
+	height: 150px;
+	width:170px;
+	border-radius: 28px;
+}
+
+.row{
+	//border: 2px solid red;
 }
 
 #popup2 a.close-popup2 {
@@ -137,24 +152,11 @@ ul{
 	justify-content: space-between;
 	margin-left: 30px;
 	margin-top: 30px;
+	max-width: 100%;
 }
 
-.Portfolio-content{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	width: 390px;
-	justify-content: space-between;
-	margin-left: 20px;
-	margin-top: 40px;
-	//border: 2px solid red;
-}
 
-.row img{
-	height: 150px;
-	width: 170px;
-	border-radius: 28px;
-}
+
 
 .socials .behance{
 	color: blue;

@@ -1,345 +1,64 @@
 
 
 
-@media (min-width: 360px) { 
-	.work-text{
-		font-size: 18px;
-	}
-	
-	.sub-text{
-		font-size: 14px;
-		
-		
-	}
-	
-	.about-text{
-		font-size: 24px;
+
+@media (max-width: 768px) {
+	.Portfolio-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
 		//border: 2px solid red;
-		margin-left:-40px;
-		margin-top: 20px;
-	}
-	.socials{
-		margin-right: 80px;
-	}
-	svg{
-		width: 60px;
-    	height:60px;
-    	border-radius: 50%;
-    }
-    #popup2 a.close-popup2 {
-    	position: absolute;
-    	top: 0px;
-    	right: 20px;
-    	font-size: 40px;
-    	font-weight: 600;
-    	text-decoration:none;
 		
-    }
-	#popup a.close-popup {
-	position: absolute;
-	top: -10px;
-	margin-right:10px;
-	right: 20px;
-	font-size: 40px;
-	font-weight: 600;
-	text-decoration:none;
-}
-	#popup .popup-content{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 350px;
-	height: 400px;
-	padding: 10px 40px;
-	background: rgba(0,0,0,0.0);
-	color: teal;
-	//border: 2px solid red;
-}
+	}
 	
-    #popup2 .popup-content2{
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%,-50%);
-    	width: 375px;
-    	padding: 10px 40px;
-    	background: rgba(0,0,0,0.0);
-    	color: teal;
-    	height: 667px;
-    	margin-top: 10px;
-    	//border: 2px solid red;
-    	
-    }
-    .Portfolio-content{
-    	display: flex;
-    	flex-wrap: wrap;
-    	gap: 1rem;
-    	width: 370px;
-    	justify-content: space-between;
-    	margin-left: -41px;
-    	margin-top: 40px;
-    	//border: 2px solid red;
-    }
-    
-    .row img{
-    	height: 140px;
-    	width: 160px;
-    	border-radius: 28px;
-    }
+	.row img{
+		height: 190px;
+		width:300px;
+		border-radius: 28px;
+		//border: 2px solid red;
+	}
+	
+	#popup2 .popup-content2{
+		background: rgba(0,0,0,0.0);
+		color: teal;
+		//border: 2px solid red;
+		//margin-top: 90px;
+		max-width: 100%;
+	}
 }
 
-@media (min-width: 412px) { 
-		.work-text{
-		font-size: 18px;
+@media (max-width: 576px) {
+	.Portfolio-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		//border: 2px solid red;
+		max-height: 600px;
 	}
 	
-	.sub-text{
-		font-size: 17px;
-	}
-		
-		
-		svg{
-		width: 80px;
-    	height:80px;
-    	border-radius: 50%;
-		margin-left:-10px;
-    }
-    #popup2 a.close-popup2 {
-    	position: absolute;
-    	top: 0px;
-    	right: 20px;
-    	font-size: 40px;
-    	font-weight: 600;
-    	text-decoration:none;
-    }
-    #popup2 .popup-content2{
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%,-50%);
-    	width: 355px;
-    	padding: 10px 40px;
-    	background: rgba(0,0,0,0.0);
-    	color: teal;
-    	height: 667px;
-    	margin-top: 10px;
-    	//border: 2px solid red;
-    	
-    }
-    .Portfolio-content{
-    	display: flex;
-    	flex-wrap: wrap;
-    	gap: 1rem;
-    	width: 350px;
-    	justify-content: space-between;
-    	margin-left: -50px;
-    	margin-top: 40px;
-    	//border: 2px solid red;
-    }
-    
-    .row img{
-    	height: 140px;
-    	width: 160px;
-    	border-radius: 28px;
-    }
- }
- 
- 
- @media (min-width: 768px) { 
-	.work-text{
-		font-size: 20px;
+	.row img{
+		max-width: 150px;
+		height: 100px;
+		border-radius: 28px;
+		//border: 2px solid red;
 	}
 	
-	.sub-text{
-		font-size: 18px;
+	#popup2 .popup-content2{
+		background: rgba(0,0,0,0.0);
+		color: teal;
+		//border: 2px solid red;
+		margin-top:50px;
+		max-width: 100%;
+		height: 800px;
 	}
-		
-	.about-text{
-		font-size: 26px;
-	}
-		
-	svg{
-		width: 80px;
-    	height:80px;
-    	border-radius: 50%;
-    }
-    #popup2 a.close-popup2 {
-    	position: absolute;
-    	top: 0px;
-    	right: 20px;
-    	font-size: 40px;
-    	font-weight: 600;
-    	text-decoration:none;
-    }
-    #popup2 .popup-content2{
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%,-50%);
-    	width: 600px;
-    	padding: 10px 40px;
-    	background: rgba(0,0,0,0.0);
-    	color: teal;
-    	height: 667px;
-    	margin-top: 10px;
-    	//border: 2px solid red;
-    	
-    }
-    .Portfolio-content{
-    	display: flex;
-    	flex-wrap: wrap;
-    	gap: 1rem;
-    	width: 600px;
-    	justify-content: space-between;
-    	margin-left: -41px;
-    	margin-top: 40px;
-    	//border: 2px solid red;
-    }
-    
-    .row img{
-    	height: 200px;
-    	width: 180px;
-    	border-radius: 28px;
-    }
- }
- 
- @media (min-width: 912px){
-	.work-text{
-		font-size: 26px;
-	}
-	
-	.sub-text{
-		font-size: 26px;
-	}
-		
-	.about-text{
-		font-size: 30px;
-		
-	}
-	
-	#popup .popup-content{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 350px;
-	height: 400px;
-	padding: 10px 40px;
-	background: rgba(0,0,0,0.0);
-	color: teal;
-	//border: 2px solid red;
 }
-		
-	svg{
-		width: 100px;
-    	height:100px;
-    	border-radius: 50%;
-    }
-    #popup2 a.close-popup2 {
-    	position: absolute;
-    	top: 0px;
-    	right: 20px;
-    	font-size: 100px;
-    	font-weight: 600;
-    	text-decoration:none;
-		margin-top:-35px;
-    }
-    #popup2 .popup-content2{
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%,-50%);
-    	width: 800px;
-    	padding: 10px 40px;
-    	background: rgba(0,0,0,0.0);
-    	color: teal;
-    	height: 667px;
-    	margin-top: 10px;
-    	//border: 2px solid red;
-    	
-    }
-    .Portfolio-content{
-    	display: flex;
-    	flex-wrap: wrap;
-    	gap: 1rem;
-    	width: 600px;
-    	justify-content: space-between;
-    	margin-left: 30px;
-    	margin-top: 0px;
-    	//border: 2px solid red;
-    }
-    
-    .row img{
-    	height: 150px;
-    	width: 180px;
-    	border-radius: 28px;
-    }
- }
- 
-  @media (min-width: 1200px){
-	  	.work-text{
-		font-size: 30px;
-	}
-	
-	.sub-text{
-		font-size: 26px;
-	}
-		
-	.about-text{
-		font-size: 32px;
-		margin-top:-20px;
-	}
-	
-	.socials{
-		margin-right:200px;
-		
-	}
-		
-	svg{
-		width: 100px;
-    	height:100px;
-    	border-radius: 50%;
-    }
-    #popup2 a.close-popup2 {
-    	position: absolute;
-    	top: 0px;
-    	right: 20px;
-    	font-size: 100px;
-    	font-weight: 600;
-    	text-decoration:none;
-		margin-top:-35px;
-    }
-    #popup2 .popup-content2{
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%,-50%);
-    	width: 930px;
-    	padding: 10px 40px;
-    	background: rgba(0,0,0,0.0);
-    	color: teal;
-    	height: 570px;
-    	margin-top: -20px;
-		margin-left: -70px;
-    	//border: 2px solid red;
-    	
-    }
-    .Portfolio-content{
-    	display: flex;
-    	flex-wrap: wrap;
-    	gap: 1rem;
-    	width: 900px;
-    	justify-content: space-between;
-    	margin-left: -30px;
-    	margin-top: 50px;
-		height: 550px;
-    	//border: 2px solid red;
-    }
-    
-    .row img{
-    	height: 160px;
-    	width: 200px;
-    	border-radius: 28px;
-    }
-  }
+
+/*
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) {  }
+*/
